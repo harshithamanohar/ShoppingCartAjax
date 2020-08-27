@@ -1,0 +1,28 @@
+{
+  "name": "single-page-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Michael Wanyoike",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.1",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^3.3.7",
+    "dotenv": "^5.0.1",
+    "express": "^4.17.1",
+    "handlebars": "^4.7.6",
+    "jquery": "^3.5.1",
+    "semantic-ui-calendar": "0.0.8",
+    "semantic-ui-css": "^2.4.1",
+    "vanilla-router": "^1.2.8"
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}
