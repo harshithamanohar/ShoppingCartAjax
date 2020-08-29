@@ -5,24 +5,32 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build-css": "node-sass --include-path scss scss/main.scss public/css/main.css",
+	"watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "keywords": [],
   "author": "Michael Wanyoike",
   "license": "MIT",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
     "axios": "^0.18.1",
     "body-parser": "^1.18.2",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.0.0",
     "dotenv": "^5.0.1",
     "express": "^4.17.1",
     "handlebars": "^4.7.6",
     "jquery": "^3.5.1",
+    "sass": "^1.26.10",
     "semantic-ui-calendar": "0.0.8",
     "semantic-ui-css": "^2.4.1",
     "vanilla-router": "^1.2.8"
   },
   "directories": {
     "lib": "lib"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
   }
 }
